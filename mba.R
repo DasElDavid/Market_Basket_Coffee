@@ -81,7 +81,6 @@ summary(coffee_association_rules)
 
 plot(coffee_association_rules, measure = c("confidence", "lift"), main = "Association Plot for Coffee Shop")
 
-?plot
 
 
 coffee_association_rules <-  coffee_association_rules[!is.redundant(coffee_association_rules, measure = "confidence",
@@ -90,7 +89,7 @@ coffee_association_rules <-  coffee_association_rules[!is.redundant(coffee_assoc
 
 plot(coffee_association_rules, measure = c("confidence", "lift"), main = "Association Plot for Coffee Shop")
 
-?sort
+
 coffee_association_rules <- sort(coffee_association_rules, by = "lift")
 
 inspect(coffee_association_rules[1:14])
