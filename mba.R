@@ -1,6 +1,5 @@
 library(arules)
 library(arulesViz)
-library(tidyverse)
 library(plyr)
 library(dplyr)
 library(readr)
